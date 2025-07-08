@@ -7,7 +7,7 @@
 ### How to handle real-time camera input in the production
 
 ### Code structure for this project is as follows
-
+```bash
 project/
 │
 ├── app/
@@ -20,3 +20,4 @@ project/
 ├── data/                # Dataset (optional if downloaded)
 ├── requirements.txt
 └── README.md
+```
