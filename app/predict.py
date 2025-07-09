@@ -12,7 +12,7 @@ import torch
 
 model = load_model()
 
-def predict_digit(image)
+def predict_digit(image):
     tensor = preprocess_image(image)                 # 1x1x28x28
     with torch.no_grad():                            # No gradient computation
         output = model(tensor)
