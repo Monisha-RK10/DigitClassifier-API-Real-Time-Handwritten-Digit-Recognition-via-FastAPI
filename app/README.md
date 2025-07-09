@@ -2,9 +2,7 @@
 
 ## Files
 
-### main.py
-
-**FastAPI Application and Routing**
+### `main.py` (**FastAPI Application and Routing**)
 
 This is the main application file that:
 - Instantiates a FastAPI app instance to serve the API.
@@ -23,9 +21,7 @@ This is the main application file that:
 
 ---
 
-### camera.py 
-
-**Virtual Camera Image Capture**
+### `camera.py` (**Virtual Camera Image Capture**)
 
 This module simulates a camera feed for testing purposes by:
 - Accessing the app/mock_camera_feed directory, which contains sample digit images like digit 2 (camera_digit_2_1.png).
@@ -34,10 +30,9 @@ This module simulates a camera feed for testing purposes by:
 - Returning this image for inference, allowing the API to simulate capturing an image from a camera without requiring actual hardware.
 ---
 
-### model.py 
+### `model.py` (**Model Training** & **Model Architecture Details**)
 
-**Model Training**
-
+`Model Training`
 - Downloads and preprocesses the MNIST dataset:
   - Converts images to tensors
   - Normalizes pixel values
@@ -52,7 +47,7 @@ This module simulates a camera feed for testing purposes by:
 - Trains the CNN model with validation monitoring and early stopping to avoid overfitting
 - Saves the trained model weights (.pth) for later use in inference
 
-**Model Architecture Details**
+`Model Architecture Details`
 | Layer                  | Description                          | Output Shape |
 | ---------------------- | ------------------------------------ | ------------ |
 | Input                  | Grayscale image (1 channel)          | (1, 28, 28)  |
@@ -67,9 +62,7 @@ This module simulates a camera feed for testing purposes by:
 
 ---
 
-### predict.py
-
-**Model Loading and Inference**
+### `predict.py` (**Model Loading and Inference**)
 
 This module handles:
 - Loading the trained CNN model weights saved during training.
@@ -81,9 +74,7 @@ This module handles:
 
 ---
 
-### utils.py 
-
-**Image Preprocessing for MNIST**
+### `utils.py` (**Image Preprocessing for MNIST**)
 
 This module prepares input images to be compatible with the MNIST-trained CNN model by performing the following steps:
 - Grayscale Conversion: Converts input images to grayscale, as MNIST digits are single-channel.
@@ -95,9 +86,8 @@ This module prepares input images to be compatible with the MNIST-trained CNN mo
 > This ensures that any input image matches the format and distribution expected by the CNN model during inference.
 
 ---
-### mnist_cnn.pth
 
-**Model Weights**
+### `mnist_cnn.pth` (**Model Weights**)
 
 - The file app/mnist_cnn.pth contains the trained weights of the CNN model for MNIST digit classification.
 - This file is generated after training the model on the MNIST dataset.
@@ -105,5 +95,3 @@ This module prepares input images to be compatible with the MNIST-trained CNN mo
 - If you want to retrain the model, you can run the training script (if provided) to generate a new weights file.
 
 > Note: Make sure this file is included in your repository or accessible at the correct path when deploying or running the app.
-
-```
