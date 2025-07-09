@@ -26,8 +26,8 @@ Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
 │
 ├── test_images          # Image Upload (from disk), Client sends an attached image file i.e., Camera Flag = False
 ├── requirements.txt
-├── README.md
 ├── Dockerfile
 ├── .dockerignore
+├── README.md
 
 ```
