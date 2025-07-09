@@ -6,6 +6,17 @@
 - Users can either upload an image or simulate a camera capture.
 - The goal is to demonstrate how a simple computer vision model can be wrapped inside a clean API, ready for testing, scaling, and hardware integration.
 
+## Why MNIST?
+
+- Simple and well-established benchmark dataset.
+- Fast to train (a few minutes on CPU).
+- Suitable for testing end-to-end API integration.
+- Ideal to simulate camera-based inference pipelines.
+
+This setup mirrors real-world applications where a physical camera might capture digits (e.g., meter readings, postal codes, or handwritten forms), and a backend system processes the image for classification.
+
+The focus is on clean API design, modular codebase (training, prediction, utils, camera), and extensibility, making it a strong foundation for scaling up to real-time industrial vision tasks.
+
 ---
 
 ## Dataset
