@@ -41,6 +41,7 @@
   - Converts images to tensors
   - Normalizes pixel values
   - Splits data into training, validation, and test sets
+  - Creates data loaders with shuffling for training
 - Defines a simple CNN architecture with:
   - Two convolutional layers + ReLU activations
   - Max pooling layer for downsampling
@@ -64,7 +65,7 @@
 | Output Layer           | 10 neurons (digits 0-9) + LogSoftmax | (10,)        |
 
 
-Creates data loaders with shuffling for training
+
 ---
 
 ### predict.py
