@@ -18,4 +18,7 @@ for each batch:
  - `Static input (uploaded file)`: e.g., from a UI or API call
  - `Dynamic capture (camera feed)`: e.g., from an actual industrial camera in production (like IDS, Ximea, etc.)
 
-In a real-world setup, a USB webcam or industrial camera (e.g., IDS, Ximea) would be interfaced using SDKs like OpenCV (cv2.VideoCapture), camera-specific Python APIs (e.g., pyueye, ximea-python), or GStreamer pipelines. The application would continuously acquire frames via a loop (cap.read() or async frame grabbing), and those frames would be passed into the inference pipeline. In production, proper error handling, timeouts, and frame buffering would be used to ensure robustness.
+In a real-world setup:
+- A USB webcam or industrial camera (e.g., IDS, Ximea) would be interfaced using SDKs like OpenCV (cv2.VideoCapture), camera-specific Python APIs (e.g., pyueye, ximea-python), or GStreamer pipelines.
+- The application would continuously acquire frames via a loop (cap.read() or async frame grabbing), and those frames would be passed into the inference pipeline.
+- In production, proper error handling, timeouts, and frame buffering would be used to ensure robustness.
