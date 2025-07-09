@@ -70,8 +70,8 @@ The code in `app/model.py` performs the following:
 > -  **LogSoftmax**: Outputs log-probabilities to improve numerical stability.
 > -  **Early Stopping**: Stops training if validation accuracy plateaus to save compute and prevent overfitting.
 > -  **Model Performance**:
->   - Validation Accuracy: `99.04%`
->   - Avg Validation Loss: `0.0337`
+>     - Validation Accuracy: `99.04%`
+>     - Avg Validation Loss: `0.0337`
 ---
 
 ### `predict.py` (**Model Loading and Inference**)
