@@ -45,7 +45,7 @@ The code in `app/model.py` performs the following:
   - Max pooling layer for downsampling
   - Dropout layers to prevent overfitting (25% after conv, 50% after fully connected)
   - Fully connected layers
-  - LogSoftmax output for classification probabilities to prevent overflow errors when exponentiating large numbers.
+  - LogSoftmax for classification probabilities to prevent overflow errors when exponentiating large numbers.
 - Trains the CNN model with validation monitoring and early stopping to avoid overfitting
 - Saves the trained model weights (.pth) for later use in inference
 
