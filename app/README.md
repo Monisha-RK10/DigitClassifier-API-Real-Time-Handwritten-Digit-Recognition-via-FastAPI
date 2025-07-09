@@ -17,7 +17,7 @@
   - Client sends a POST request to /predict?use_camera=true
   - In this case, there is no image file attached.
   - The backend should:
-    - Detect that use_camera == true
+    - Detect that `use_camera == true`
     - Internally load an image from disk that simulates a "camera" (e.g., camera_image.png)
 
 **In a real-world setup:**
