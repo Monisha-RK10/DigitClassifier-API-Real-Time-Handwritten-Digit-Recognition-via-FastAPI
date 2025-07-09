@@ -1,8 +1,10 @@
-# Image_Classification_using_CNN_on_MNIST (Python & FastAPI)
+# DigitClassifier API: Real-Time Handwritten Digit Recognition via FastAPI
 
-## Description
+## Use Case: Real-Time Handwritten Digit Recognition
 
-> This project trains a simple Convolutional Neural Network (CNN) on the MNIST handwritten digit dataset using PyTorch. The trained model is saved for later inference in a FastAPI-based digit recognition API.
+> This project implements a lightweight, modular FastAPI application that allows users to classify handwritten digits (0–9) using a trained CNN model on the MNIST dataset.
+> Users can either upload an image or simulate a camera capture.
+> The goal is to demonstrate how a simple computer vision model can be wrapped inside a clean API, ready for testing, scaling, and hardware integration.
 
 ---
 
