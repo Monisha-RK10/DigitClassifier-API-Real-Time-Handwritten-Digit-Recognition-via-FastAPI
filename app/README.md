@@ -32,7 +32,8 @@ This module simulates a camera feed for testing purposes by:
 
 ### `model.py` (**Model Training** & **Model Architecture Details**)
 
-`Model Training`
+**Model Training**
+
 The code in `app/model.py` performs the following:
 - Downloads and preprocesses the MNIST dataset:
   - Converts images to tensors
@@ -48,7 +49,8 @@ The code in `app/model.py` performs the following:
 - Trains the CNN model with validation monitoring and early stopping to avoid overfitting
 - Saves the trained model weights (.pth) for later use in inference
 
-`Model Architecture Details`
+**Model Architecture Details**
+
 | Layer                  | Description                          | Output Shape |
 | ---------------------- | ------------------------------------ | ------------ |
 | Input                  | Grayscale image (1 channel)          | (1, 28, 28)  |
