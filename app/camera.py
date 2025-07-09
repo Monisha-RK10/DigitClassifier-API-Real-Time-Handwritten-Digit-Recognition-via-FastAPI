@@ -2,7 +2,7 @@
 # Step 4
 # This code does the following:
 # Look inside app/mock_camera_feed
-# Pick a random image like digit_5.png
+# Pick a random image like digit 2 (camera_digit_2_1.png)
 # Open it as a PIL image
 # Send it to the model
 
