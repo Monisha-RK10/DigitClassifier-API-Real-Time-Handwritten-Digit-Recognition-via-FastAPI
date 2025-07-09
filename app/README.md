@@ -15,7 +15,19 @@ for each batch:
 | Upload an image            | Accept it normally via `UploadFile`                      |
 | `use_camera=true` in query | Load a dummy image file (`mock_frame.jpg`) from a folder |
 
- - `Static input (uploaded file)`: e.g., from a UI or API call
+ - Image Upload (from disk)
+   - `Static input (uploaded file)`: e.g., from a UI or API call
+   - Client sends a POST request to /predict with an attached image file.
+   - In FastAPI route, we will receive it as
+   - ```bash
+     async def predict(file: UploadFile = File(...))
+     ```
+   -  Typical behavior for frontend upload buttons or Postman tests.
+   -  No need for camera logic here as the image is already attached by the client.
+
+
+
+ 
  - `Dynamic capture (camera feed)`: e.g., from an actual industrial camera in production (like IDS, Ximea, etc.)
 
 In a real-world setup:
