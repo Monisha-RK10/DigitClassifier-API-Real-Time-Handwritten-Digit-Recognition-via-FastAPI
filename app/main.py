@@ -43,7 +43,7 @@ async def predict_api(file: UploadFile = File(None), use_camera: bool = Query(Fa
             raise HTTPException(status_code=400, detail="No image provided.")                     # 400 Bad Request (Client's side issue)
 
         prediction = predict_digit(image)
-        return JSONResponse({"prediction": prediction})                                           # Cleaner, controlled output -> good habit in APIs
+        return JSONResponse({"prediction": prediction})                                           # JSONResponse: Cleaner, controlled output -> good habit in APIs
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))                                       # 500 Internal Server Error
