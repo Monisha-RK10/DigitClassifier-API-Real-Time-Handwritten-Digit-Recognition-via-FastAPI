@@ -19,7 +19,23 @@
 
 ---
 
-## Dataset
+## Dataset Source
+
+The model is trained on the **MNIST** dataset, a classic benchmark dataset for handwritten digit classification.
+
+- **Name:** Modified National Institute of Standards and Technology (MNIST)
+- **Classes:** 10 (digits 0–9)
+- **Size:** 70,000 grayscale images (60,000 for training, 10,000 for testing)
+- **Image Size:** 28×28 pixels
+- **Format:** PNG (converted to tensor format during preprocessing)
+
+The dataset is automatically downloaded using `torchvision.datasets.MNIST` and stored locally under the `./data/` directory if not already present.
+
+**Source:**  
+
+[https://pytorch.org/vision/stable/datasets.html#mnist](https://pytorch.org/vision/stable/datasets.html#mnist)
+
+> No manual download or preprocessing is required, it is fully handled by the training pipeline.
 
 ---
 
