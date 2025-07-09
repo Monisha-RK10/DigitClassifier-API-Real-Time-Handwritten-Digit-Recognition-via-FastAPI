@@ -1,9 +1,9 @@
 ### main.py
  **Image acquisition can happen from**:
- | Scenario                   | What to do                                               |
- | -------------------------- | -------------------------------------------------------- |
-| Upload an image            | Accept it normally via `UploadFile`                      |
-| `use_camera=true` in query | Load a dummy image file (`mock_frame.jpg`) from a folder |
+| Mode              | Client Sends        | Backend Handles With              | Notes                                |
+| ----------------- | ------------------- | --------------------------------- | ------------------------------------ |
+| Image Upload      | Attached image file | `UploadFile = File(...)`          | Common for Postman, frontends        |
+| Use Camera (flag) | No image, only flag | `use_camera: bool = Query(False)` | Load simulated image from local path |
 
 - **Image Upload (from disk)**
   - `Static input (uploaded file)`: e.g., from a UI or API call
@@ -20,7 +20,7 @@
     - Detect that use_camera == true
     - Internally load an image from disk that simulates a "camera" (e.g., camera_image.png)
 
-In a real-world setup:
+**In a real-world setup:**
 - A USB webcam or industrial camera (e.g., IDS, Ximea) would be interfaced using SDKs like OpenCV (cv2.VideoCapture), camera-specific Python APIs (e.g., pyueye, ximea-python), or GStreamer pipelines.
 - The application would continuously acquire frames via a loop (cap.read() or async frame grabbing), and those frames would be passed into the inference pipeline.
 - In production, proper error handling, timeouts, and frame buffering would be used to ensure robustness.
