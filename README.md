@@ -16,8 +16,12 @@ project/
 │   ├── model.py         # Model training and loading
 │   ├── predict.py       # Prediction logic
 │   └── utils.py         # Preprocessing, etc.
-│
-├── data/                # Dataset (optional if downloaded)
+|   └── mnist_cnn.pth    # model weights
+|   └── README.md        
+│  
 ├── requirements.txt
 └── README.md
+└── Dockerfile
+└── .dockerignore
+
 ```
