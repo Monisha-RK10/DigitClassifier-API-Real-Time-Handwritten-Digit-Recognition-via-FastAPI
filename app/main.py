@@ -27,7 +27,7 @@ from app.predict import predict_digit                                           
 
 app = FastAPI()                                                                                   # app gets picked up while running uvicorn app.main:app
 
-@app.get("/health")                                                                               # To verify if API is running. Test this at http://localhost:8000/health (localhost: User's machine, 8000: Uvicorn’s default port number)
+@app.get("/health")                                                                               # To verify if API is running
 def health_check():
     return {"status": "ok"}
 
