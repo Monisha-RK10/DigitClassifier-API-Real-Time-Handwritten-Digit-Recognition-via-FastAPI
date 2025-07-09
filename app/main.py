@@ -1,6 +1,6 @@
 # app/main.py
 
-# Step 5 – FastAPI Application and Routing
+# Step 5: FastAPI Application and Routing
 # This code does the following:
 # Instantiates the FastAPI app
 # Creates two endpoints via decorators:
