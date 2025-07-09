@@ -97,17 +97,13 @@ This module prepares input images to be compatible with the MNIST-trained CNN mo
 ---
 ### mnist_cnn.pth
 
----
+**Model Weights**
 
-### mock_camera_feed
-```bash
-55,000 samples
-↓  split into
-859 batches (each batch = 64 samples)
-↓
-for each batch:
-    → forward pass
-    → compute loss
-    → backprop
-    → optimizer step
+- The file app/mnist_cnn.pth contains the trained weights of the CNN model for MNIST digit classification.
+- This file is generated after training the model on the MNIST dataset.
+- It is loaded by the application during inference to make predictions.
+- If you want to retrain the model, you can run the training script (if provided) to generate a new weights file.
+
+> Note: Make sure this file is included in your repository or accessible at the correct path when deploying or running the app.
+
 ```
