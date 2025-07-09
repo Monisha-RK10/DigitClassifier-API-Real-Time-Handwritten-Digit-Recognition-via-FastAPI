@@ -14,7 +14,7 @@
 
 ---
 
-## Example API call
+## Example API Call
 
 ---
 
