@@ -103,7 +103,7 @@ def train_model(epochs=10, patience=3):
                 print(f"Train Epoch: {epoch+1} [{batch_idx * len(data)}/{len(train_loader.dataset)}]  Loss: {loss.item():.6f}")
 
         # Validation after each epoch
-        model.eval()                                                                                 # Evaluation mode: disables dropout and batchnorm randomness
+        model.eval()                                                                                 # Evaluation mode: Disables dropout and batchnorm randomness
         val_loss = 0                                                                                 # Stores total loss over all validation samples
         correct = 0                                                                                  # Counts how many predictions were correct
         with torch.no_grad():                                                                        # Disable gradient computation for validation
@@ -129,7 +129,7 @@ def train_model(epochs=10, patience=3):
             print(f"No improvement. Patience: {epochs_no_improve}/{patience}\n")
             if epochs_no_improve >= patience:                                                        # If 'epochs_no_improve' >= patience
                 print("Early stopping triggered.")
-                break                                                                                # Exist the training loop and use the last best saved model to disk
+                break                                                                                # Exit the training loop and use the last best saved model to disk
 
 # This function loads the previously trained model's parameters from disk
 def load_model():
