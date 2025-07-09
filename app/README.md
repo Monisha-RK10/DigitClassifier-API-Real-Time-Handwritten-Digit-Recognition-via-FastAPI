@@ -62,6 +62,7 @@ The code in `app/model.py` performs the following:
 | Output Layer           | 10 neurons (digits 0-9) + LogSoftmax | (10,)        |
 
 > Note:
+>
 > **Transforms**: Normalization and conversion to tensors ensures consistent input scaling.
 > 
 > **Dropout**: Reduces overfitting by randomly disabling neurons during training.
