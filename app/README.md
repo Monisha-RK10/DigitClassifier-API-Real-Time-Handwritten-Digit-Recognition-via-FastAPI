@@ -74,7 +74,7 @@ The code in `app/model.py` performs the following:
 ### `predict.py` (**Model Loading and Inference**)
 
 This module handles:
-- Loading the trained CNN model weights saved during training.
+- Loading the trained CNN model weights from `model.py` saved during training.
 - Using the preprocessing utilities from `app/utils.py` to prepare incoming images.
 - Running a forward pass on the preprocessed image tensor through the model in evaluation mode `(torch.no_grad())`, to efficiently compute predictions.
 - Extracting the predicted digit by selecting the class with the highest output probability.
