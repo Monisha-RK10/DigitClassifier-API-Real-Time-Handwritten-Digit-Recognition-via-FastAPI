@@ -7,10 +7,10 @@
 
 - **Image Upload (from disk)**
   - `Static input (uploaded file)`: e.g., from a UI or API call
-  - Client sends a POST request to /predict with an attached image file.
+  - Client sends a POST request to /predict with an attached image file
   - In FastAPI route, we will receive it as  `async def predict(file: UploadFile = File(...))`
-  -  Typical behavior for frontend upload buttons or Postman tests.
-  -  No need for camera logic here as the image is already attached by the client.
+  -  Typical behavior for frontend upload buttons or Postman tests
+  -  No need for camera logic here as the image is already attached by the client
 
 - **Camera Flag (simulate a camera snapshot)**
   - `Dynamic capture (camera feed)`: e.g., from an actual industrial camera in production (like IDS, Ximea, etc.)
