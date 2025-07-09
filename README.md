@@ -1,12 +1,14 @@
 # DigitClassifier API: Real-Time Handwritten Digit Recognition via FastAPI
 
-## Use Case: Real-Time Handwritten Digit Recognition
+## Description of Use Case
+
+### Use Case: Real-Time Handwritten Digit Recognition
 
 - This project implements a lightweight, modular FastAPI application that allows users to classify handwritten digits (0–9) using a trained CNN model on the MNIST dataset.
 - Users can either upload an image or simulate a camera capture.
 - The goal is to demonstrate how a simple computer vision model can be wrapped inside a clean API, ready for testing, scaling, and hardware integration.
 
-## Why MNIST?
+### Why MNIST?
 
 - Simple and well-established benchmark dataset.
 - Fast to train (a few minutes on CPU).
