@@ -12,7 +12,13 @@
   -  Typical behavior for frontend upload buttons or Postman tests.
   -  No need for camera logic here as the image is already attached by the client.
 
-- **`Dynamic capture (camera feed)`: e.g., from an actual industrial camera in production (like IDS, Ximea, etc.)
+- **Camera Flag (simulate a camera snapshot)**
+  - `Dynamic capture (camera feed)`: e.g., from an actual industrial camera in production (like IDS, Ximea, etc.)
+  - Client sends a POST request to /predict?use_camera=true
+  - In this case, there is no image file attached.
+  - The backend should:
+    - Detect that use_camera == true
+    - Internally load an image from disk that simulates a "camera" (e.g., camera_image.png)
 
 In a real-world setup:
 - A USB webcam or industrial camera (e.g., IDS, Ximea) would be interfaced using SDKs like OpenCV (cv2.VideoCapture), camera-specific Python APIs (e.g., pyueye, ximea-python), or GStreamer pipelines.
