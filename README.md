@@ -10,7 +10,7 @@
 
 ---
 
-## Steps to Run the API
+## Steps to Run API
 
 ---
 
