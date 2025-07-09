@@ -33,6 +33,13 @@
 
 ### camera.py 
 
+**Virtual Camera Image Capture**
+
+This module simulates a camera feed for testing purposes by:
+- Accessing the app/mock_camera_feed directory, which contains sample digit images like digit 2 (camera_digit_2_1.png).
+- Randomly selecting one image from this folder.
+- Opening the selected image as a PIL image.
+- Returning this image for inference, allowing the API to simulate capturing an image from a camera without requiring actual hardware.
 ---
 
 ### model.py 
