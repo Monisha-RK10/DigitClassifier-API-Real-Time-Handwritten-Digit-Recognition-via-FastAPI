@@ -1,4 +1,5 @@
 # app/camera.py
+
 # Step 4
 # This code does the following:
 # Look inside app/mock_camera_feed
