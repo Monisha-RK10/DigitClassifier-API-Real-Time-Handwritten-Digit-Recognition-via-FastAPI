@@ -37,6 +37,8 @@
 
 ### model.py 
 
+**Model Training**
+
 - Downloads and preprocesses the MNIST dataset:
   - Converts images to tensors
   - Normalizes pixel values
@@ -67,6 +69,16 @@
 ---
 
 ### predict.py
+
+**Model Loading and Inference**
+
+This module handles:
+- Loading the trained CNN model weights saved during training.
+- Using the preprocessing utilities from app/utils.py to prepare incoming images.
+- Running a forward pass on the preprocessed image tensor through the model in evaluation mode (torch.no_grad()), to efficiently compute predictions.
+- Extracting the predicted digit by selecting the class with the highest output probability.
+
+> This module provides the main function predict_digit(image: PIL.Image) that takes a PIL image as input and returns the predicted digit as an integer, which is then used by the API for digit classification.
 
 ---
 
