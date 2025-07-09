@@ -45,4 +45,7 @@ Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
 ├── README.md
 
 ```
+---
 ### Sample Output from Render
+
+---
