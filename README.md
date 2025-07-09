@@ -16,8 +16,8 @@ project/
 │   ├── model.py         # Model training and loading
 │   ├── predict.py       # Prediction logic
 │   ├── utils.py         # Preprocessing, etc.
-|   ├── mnist_cnn.pth    # model weights
-|   ├──README.md        
+│   ├── mnist_cnn.pth    # model weights
+│   ├──README.md        
 │  
 ├── requirements.txt
 ├── README.md
