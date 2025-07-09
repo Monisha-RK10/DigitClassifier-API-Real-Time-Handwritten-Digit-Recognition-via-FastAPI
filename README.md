@@ -18,7 +18,7 @@ Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
 │   ├── predict.py       # Prediction logic
 │   ├── utils.py         # Preprocessing, etc.
 │   ├── mnist_cnn.pth    # Model weights
-    ├── mock_camera_feed # Camera Flag = True, i.e., no image, only flag
+│   ├── mock_camera_feed # Camera Flag = True, i.e., no image, only flag
 │   ├──README.md        
 │
 ├── test_images          # Image Upload (from disk), Client sends an attached image file i.e., Camera Flag = False
