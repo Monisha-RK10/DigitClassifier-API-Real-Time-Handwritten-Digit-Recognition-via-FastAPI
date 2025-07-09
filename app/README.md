@@ -69,7 +69,9 @@ The code in `app/model.py` performs the following:
 > -  **Dropout**: Reduces overfitting by randomly disabling neurons during training.
 > -  **LogSoftmax**: Outputs log-probabilities to improve numerical stability.
 > -  **Early Stopping**: Stops training if validation accuracy plateaus to save compute and prevent overfitting.
-> -  **Model Performance**: Val set: `Avg loss: 0.0337`, `Accuracy: 4952/5000 (99.04%)`
+> -  **Model Performance**:
+>   - Validation Accuracy: `99.04%`
+>   - Avg Validation Loss: `0.0337`
 ---
 
 ### `predict.py` (**Model Loading and Inference**)
