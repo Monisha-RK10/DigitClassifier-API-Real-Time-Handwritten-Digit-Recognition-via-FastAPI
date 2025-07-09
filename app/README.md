@@ -1,3 +1,7 @@
+# app/
+
+## Files
+
 ### main.py
  **Image acquisition can happen from**:
 | Mode              | Client Sends        | Backend Handles With              | Notes                                |
@@ -26,6 +30,27 @@
 - In production, proper error handling, timeouts, and frame buffering would be used to ensure robustness.
 
 ---
+
+### camera.py 
+
+---
+
+### model.py 
+
+---
+
+### predict.py
+
+---
+
+### utils.py 
+
+---
+### mnist_cnn.pth
+
+---
+
+### mock_camera_feed
 ```bash
 55,000 samples
 ↓  split into
