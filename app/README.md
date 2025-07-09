@@ -65,13 +65,10 @@ The code in `app/model.py` performs the following:
 
 > Note:
 >
-> **Transforms**: Normalization and conversion to tensors ensures consistent input scaling.
-> 
-> **Dropout**: Reduces overfitting by randomly disabling neurons during training.
->
-> **LogSoftmax**: Outputs log-probabilities to improve numerical stability.
->
-> **Early Stopping**: Stops training if validation accuracy plateaus to save compute and prevent overfitting.
+> - **Transforms**: Normalization and conversion to tensors ensures consistent input scaling.
+> -  **Dropout**: Reduces overfitting by randomly disabling neurons during training.
+> -  **LogSoftmax**: Outputs log-probabilities to improve numerical stability.
+> -  **Early Stopping**: Stops training if validation accuracy plateaus to save compute and prevent overfitting.
 ---
 
 ### `predict.py` (**Model Loading and Inference**)
