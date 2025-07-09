@@ -77,9 +77,9 @@
 This module prepares input images to be compatible with the MNIST-trained CNN model by performing the following steps:
 - Grayscale Conversion: Converts input images to grayscale, as MNIST digits are single-channel.
 - Resize: Resizes images to the standard MNIST dimension of 28×28 pixels.
-- ToTensor: Converts the PIL grayscale image to a PyTorch tensor with shape `[1, 28, 28]. This also scales pixel values from [0, 255] to [0.0, 1.0].
-- Normalize: Applies normalization using MNIST mean (0.1307) and standard deviation (0.3081), matching the model’s training conditions.
-- Batch Dimension: Adds a batch dimension to the tensor to form [1, 1, 28, 28] which is required by the PyTorch model.
+- ToTensor: Converts the PIL grayscale image to a PyTorch tensor with shape `[1, 28, 28]`. This also scales pixel values from `[0, 255]` to `[0.0, 1.0]`.
+- Normalize: Applies normalization using MNIST mean `(0.1307)` and standard deviation `(0.3081)`, matching the model’s training conditions.
+- Batch Dimension: Adds a batch dimension to the tensor to form `[1, 1, 28, 28]` which is required by the PyTorch model.
 
 > This ensures that any input image matches the format and distribution expected by the CNN model during inference.
 
