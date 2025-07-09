@@ -1,12 +1,12 @@
 # Image_Classification_using_CNN_on_MNIST (Python & FastAPI)
 
-### Description of the use case
-### Dataset source
-### Steps to run the API (uvicorn, etc.)
+### Description
+### Dataset
+### Steps to run the API
 ### Example API call
 ### How to handle real-time camera input in the production
 
-### Code structure for this project is as follows
+### Code structure for this project
 ```bash
 
 Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
