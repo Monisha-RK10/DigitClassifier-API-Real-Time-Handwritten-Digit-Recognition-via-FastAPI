@@ -37,6 +37,34 @@
 
 ### model.py 
 
+- Downloads and preprocesses the MNIST dataset:
+  - Converts images to tensors
+  - Normalizes pixel values
+  - Splits data into training, validation, and test sets
+- Defines a simple CNN architecture with:
+  - Two convolutional layers + ReLU activations
+  - Max pooling layer for downsampling
+  - Dropout layers to prevent overfitting (25% after conv, 50% after fully connected)
+  - Fully connected layers
+  - LogSoftmax output for classification probabilities
+- Trains the CNN model with validation monitoring and early stopping to avoid overfitting
+- Saves the trained model weights (.pth) for later use in inference
+
+**Model Architecture Details**
+| Layer                  | Description                          | Output Shape |
+| ---------------------- | ------------------------------------ | ------------ |
+| Input                  | Grayscale image (1 channel)          | (1, 28, 28)  |
+| Conv1 + ReLU           | 32 filters, kernel 3x3               | (32, 26, 26) |
+| Conv2 + ReLU           | 64 filters, kernel 3x3               | (64, 24, 24) |
+| MaxPooling             | 2x2 pooling                          | (64, 12, 12) |
+| Dropout (Conv2D)       | 25% dropout rate                     | (64, 12, 12) |
+| Flatten                | Flattens to 9216 features            | (9216,)      |
+| Fully Connected + ReLU | 128 neurons                          | (128,)       |
+| Dropout (FC)           | 50% dropout rate                     | (128,)       |
+| Output Layer           | 10 neurons (digits 0-9) + LogSoftmax | (10,)        |
+
+
+Creates data loaders with shuffling for training
 ---
 
 ### predict.py
