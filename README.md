@@ -31,9 +31,7 @@ The model is trained on the **MNIST** dataset, a classic benchmark dataset for h
 
 The dataset is automatically downloaded using `torchvision.datasets.MNIST` and stored locally under the `./data/` directory if not already present.
 
-**Source:**  
-
-[https://pytorch.org/vision/stable/datasets.html#mnist](https://pytorch.org/vision/stable/datasets.html#mnist)
+**Source:**  [https://pytorch.org/vision/stable/datasets.html#mnist](https://pytorch.org/vision/stable/datasets.html#mnist)
 
 > No manual download or preprocessing is required, it is fully handled by the training pipeline.
 
