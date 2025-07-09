@@ -8,7 +8,8 @@
 
 ### Code structure for this project is as follows
 ```bash
-project/
+
+Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
 │
 ├── app/
 │   ├── main.py          # FastAPI entry point
