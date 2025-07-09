@@ -1,15 +1,29 @@
 # Image_Classification_using_CNN_on_MNIST (Python & FastAPI)
 
-### Description
+## Description
 
 > This project trains a simple Convolutional Neural Network (CNN) on the MNIST handwritten digit dataset using PyTorch. The trained model is saved for later inference in a FastAPI-based digit recognition API.
 
-### Dataset
-### Steps to run the API
-### Example API call
-### How to handle real-time camera input in the production
+---
 
-### Code structure for this project
+## Dataset
+
+---
+
+## Steps to Run the API
+
+---
+
+## Example API call
+
+---
+
+## Handling Real-Time Camera Input in Production
+
+---
+
+## Project Structure
+
 ```bash
 
 Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
@@ -31,3 +45,4 @@ Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
 ├── README.md
 
 ```
+### Sample Output from Render
