@@ -82,6 +82,9 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 ```
 > **Expected Response (Random):** `{ "predicted_class": 2 }`
 
+> Note: -X: Specify the HTTP Method (other than GET)
+>
+> -F: Form Submission (multipart/form-data) to submit form data (like images or strings). It automatically sets the content type to `multipart/form-data`
 ---
 
 ## Optional: Deploying on Render.com (Public URL)
