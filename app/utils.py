@@ -2,7 +2,7 @@
 
 # Step 2
 # This piece of code does the following:
-# Preprocess the image as per MNIST dataset before performing inference
+# Preprocesses the image as per MNIST dataset before performing inference
   # Grayscale: Converts them to grayscale
   # Resize: Resizes them to (28x28)
   # ToTensor: Converts PIL image (28x28 grayscale) to PyTorch tensor [1, 28, 28] and scales pixel values from [0, 255] to [0.0, 1.0]
