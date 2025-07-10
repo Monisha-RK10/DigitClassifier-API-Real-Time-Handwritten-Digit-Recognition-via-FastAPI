@@ -150,7 +150,7 @@ Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
 │   ├── camera.py        # Simulated camera module
 │   ├── model.py         # Model training and loading
 │   ├── predict.py       # Prediction logic
-│   ├── utils.py         # Preprocessing, etc.
+│   ├── utils.py         # Preprocessing
 │   ├── mnist_cnn.pth    # Model weights
 │   ├── mock_camera_feed # Camera Flag = True, i.e., no image, only flag
 │   ├──README.md        
