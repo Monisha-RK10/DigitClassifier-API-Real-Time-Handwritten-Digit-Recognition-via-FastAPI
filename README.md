@@ -156,5 +156,9 @@ Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
 
 Visit: https://digitclassifier-api-real-time.onrender.com/docs
 
+**Swagger UI:**
+
 ![Swagger UI Screenshot](output/swagger_ui.png)
+
+**Sample prediction:**
 ---
