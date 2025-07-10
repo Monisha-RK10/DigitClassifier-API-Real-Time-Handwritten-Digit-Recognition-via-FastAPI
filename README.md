@@ -15,7 +15,7 @@
 - Suitable for testing end-to-end API integration.
 - Ideal to simulate camera-based inference pipelines.
 
-> This setup mirrors real-world applications where a physical camera might capture digits (e.g., meter readings, postal codes, or handwritten forms), and a backend system processes the image for classification.
+> This setup mirrors real-world applications where a physical camera might capture digits (e.g., food processing, electronics where each product maybe stamped with a **quality grade digit** between 0 and 9), and a backend system processes the image for classification.
 >
 > The focus is on clean API design, modular codebase (training, prediction, utils, camera), and extensibility, making it a strong foundation for scaling up to real-time industrial vision tasks.
 
