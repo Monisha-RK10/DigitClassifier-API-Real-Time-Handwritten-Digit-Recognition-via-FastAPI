@@ -62,23 +62,23 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
   8. Under **Instance Type**, select `Free (for hobby projects)`
   9. Leave the build command empty (FastAPI auto detects)
   10. Click `Deploy Web Service` (Wait for ~15–20 min until the build is complete).
-  11. Once done, visit: `https://digitclassifier-api-real-time.onrender.com/docs` (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
-  12. ###  Using the endpoints:
-      #### Health Check:
-      Click `/health` → `Try it out` → `Execute`
-      Should return: `{ "status": "ok" }`
-      #### Predict with Camera Simulation:
-- Use `POST /predict`
-- Set:
-- `use_camera` = `true`
-- Leave `file` empty (uncheck “Send empty value”)
-- Returns a simulated digit prediction from test images
-
-#### Predict with Uploaded Image:
-- Set:
-- `use_camera` = `false`
-- Upload an image (e.g., `app/test_images/3.png`)
-- Returns the predicted digit
+  11. Once done, visit: https://digitclassifier-api-real-time.onrender.com/docs (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
+  13. ###  Using the endpoints:
+      - #### Health Check:
+        - Click `/health` → `Try it out` → `Execute`
+        - Should return: `{ "status": "ok" }`
+      - #### Predict with Camera Simulation:
+        - Use `POST /predict`
+        - Set:
+          - `use_camera` = `true`
+          - Leave `file` empty (uncheck “Send empty value”)
+          - Returns a simulated digit prediction from test images
+      - #### Predict with Uploaded Image:
+      - Use `POST /predict`
+      - Set:
+        - `use_camera` = `false`
+        - Upload an image (e.g., `app/test_images/3.png`)
+        - Returns the predicted digit
 
 
 
