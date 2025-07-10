@@ -78,7 +78,7 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
          1. Click `/predict` → `Try it out`
          2. Set:
             1. `use_camera` = `false`
-            2. Upload a digit image (e.g., `app/test_images/upload_digit_2_1.png3.png`)
+            2. Upload a digit image (e.g., `app/test_images/upload_digit_2_1.png`)
          3. Returns the predicted digit
 
 
