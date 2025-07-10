@@ -39,11 +39,38 @@ The dataset is automatically downloaded using `torchvision.datasets.MNIST` and s
 
 ---
 
-## Steps to Run API
+## Steps to Run API (Running Locally using uvicorn)**
+
+# 1. Clone this repo
+git clone https://github.com/Monisha-RK10/DigitClassifier-API-Real-Time-Handwritten-Digit-Recognition-via-FastAPI.git
+cd DigitClassifier-API-Real-Time-Handwritten-Digit-Recognition-via-FastAPI
+
+# 2. (Optional) Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# 3. Install the dependencies
+pip install -r requirements.txt
+
+# 4. Run the FastAPI app
+uvicorn app.main:app --reload
+
+# 5. Open your browser at:
+http://127.0.0.1:8000/docs
+
 
 ---
 
-## Example API Call
+## Example API Calls (without Swagger UI)
+
+**Health Check**
+
+```bash
+curl http://127.0.0.1:8000/health
+```
+Expected Response:
+
+{ "status": "ok" }
 
 ---
 
