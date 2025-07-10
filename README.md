@@ -63,8 +63,7 @@ The dataset is automatically downloaded using `torchvision.datasets.MNIST` and s
 ```bash
 curl http://127.0.0.1:8000/health
 ```
-**Expected Response:**
-`{ "status": "ok" }`
+> **Expected Response:** `{ "status": "ok" }`
 
 ### Predict with uploaded image
   
@@ -73,8 +72,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
      -F "use_camera=false" \
      -F "file=@app/upload_digit_1_2"
 ```
-**Expected output:**
-`{ "predicted_class": 2 }`
+> **Expected output:** `{ "predicted_class": 2 }`
 
 ### Predict with camera simulation
 
@@ -82,8 +80,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 curl -X POST "http://127.0.0.1:8000/predict" \
      -F "use_camera=true"
 ```
-**Expected output (random):**
-`{ "predicted_class": 2 }`
+> **Expected output (random):** `{ "predicted_class": 2 }`
 
 ---
 
