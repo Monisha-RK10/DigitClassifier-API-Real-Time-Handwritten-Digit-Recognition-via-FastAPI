@@ -78,15 +78,14 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
           - Returns a simulated digit prediction from test images
       
       - **Predict with Uploaded Image:**
-       - Use `POST /predict`
-      - Set:
-        - `use_camera` = `false`
-        - Upload an image (e.g., `app/test_images/3.png`)
-        - Returns the predicted digit
+        - Use `POST /predict`
+        - Set:
+          - `use_camera` = `false`
+          - Upload an image (e.g., `app/test_images/3.png`)
+          - Returns the predicted digit
 
-```bash
 
----
+```
 
 ## Handling Real-Time Camera Input in Production
 
