@@ -47,6 +47,43 @@ The dataset is automatically downloaded using `torchvision.datasets.MNIST` and s
 
 ---
 
+## Optional: Deploying on Render.com (Public URL)
+
+To test the API online, you can deploy it using [Render.com](https://render.com/):
+
+### Steps:
+
+  1. Go to [https://render.com](https://render.com)
+  2. Click on `New` → `Web Service`
+  3. Select `Public Git Repository`
+  4. Paste this GitHub repo URL: `https://github.com/Monisha-RK10/DigitClassifier-API-Real-Time-Handwritten-Digit-Recognition-via-FastAPI`
+  5. Click `Connect Repository`
+  6. Under **Region**, select `Frankfurt (EU Central)` or your preferred one.
+  7. Under **Instance Type**, select `Free (for hobby projects)`
+  8. Leave the build command empty (FastAPI auto detects)
+  9. Click `Deploy Web Service` (Wait for ~15–20 min until the build is complete).
+  10. Once done, visit: `https://digitclassifier-api-real-time.onrender.com/docs` (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
+  11. ###  Using the endpoints:
+      #### Health Check:
+      Click `/health` → `Try it out` → `Execute`
+      Should return: `{ "status": "ok" }`
+      #### Predict with Camera Simulation:
+- Use `POST /predict`
+- Set:
+- `use_camera` = `true`
+- Leave `file` empty (uncheck “Send empty value”)
+- Returns a simulated digit prediction from test images
+
+#### Predict with Uploaded Image:
+- Set:
+- `use_camera` = `false`
+- Upload an image (e.g., `app/test_images/3.png`)
+- Returns the predicted digit
+
+
+
+---
+
 ## Handling Real-Time Camera Input in Production
 
 ---
