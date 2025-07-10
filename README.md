@@ -56,10 +56,7 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
   1. Go to [https://render.com](https://render.com)
   2. Click on `New` → `Web Service`
   3. Select `Public Git Repository`
-  4. Paste this GitHub repo URL:
-
-     https://github.com/Monisha-RK10/DigitClassifier-API-Real-Time-Handwritten-Digit-Recognition-via-FastAPI
-     
+  4. Paste this GitHub repo URL: https://github.com/Monisha-RK10/DigitClassifier-API-Real-Time-Handwritten-Digit-Recognition-via-FastAPI 
   6. Click `Connect Repository`
   7. Under **Region**, select `Frankfurt (EU Central)` or your preferred one.
   8. Under **Instance Type**, select `Free (for hobby projects)`
