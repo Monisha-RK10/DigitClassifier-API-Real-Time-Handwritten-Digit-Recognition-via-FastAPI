@@ -132,8 +132,10 @@ DigitClassifier API: Real-Time Handwritten Digit Recognition via FastAPI/
 ├── requirements.txt
 ├── Dockerfile
 ├── .dockerignore
-├── README.md
+├── unit_tests          # Manual test script for FastAPI endpoints using TestClient
 ├── output              # Swagger UI and sample predicion for camera simulation
+├── README.md
+
 
 ```
 ---
