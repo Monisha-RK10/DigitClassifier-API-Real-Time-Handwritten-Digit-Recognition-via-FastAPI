@@ -38,7 +38,7 @@ async def predict_api(file: UploadFile = File(None), use_camera: bool = Query(Fa
             image = capture_image_from_virtual_camera()
         elif file:
             image_data = await file.read()                                                        # await: Asynchronously reads uploaded image from client. file.read(): Gives binary image data
-            image = Image.open(io.BytesIO(image_data)).convert("RGB")                             # Reads it as bytes and convert it to an image. Creates an in-memory file from bytes
+            image = Image.open(io.BytesIO(image_data)).convert("RGB")                             # Reads it as bytes and converts it to an image. Creates an in-memory file from bytes
         else:
             raise HTTPException(status_code=400, detail="No image provided.")                     # 400 Bad Request (Client's side issue)
 
