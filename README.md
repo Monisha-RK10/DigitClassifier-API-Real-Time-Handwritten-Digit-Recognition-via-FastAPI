@@ -123,6 +123,20 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
 
 ## Handling Real-Time Camera Input in Production
 
+In a production setup, a real camera (e.g., USB webcam, IDS/Ximea industrial camera) would replace the simulated image source.
+
+For example:
+- A USB camera can be accessed using OpenCV's `cv2.VideoCapture(0)`
+- An industrial camera might use a specific SDK (e.g., IDS uEye or Ximea APIs) to stream frames
+
+The `/predict` endpoint would then connect to this live camera feed and periodically grab frames (e.g., 1 every 10 seconds), convert the frame to a compatible image format (e.g., PIL or NumPy), and pass it to the prediction pipeline.
+
+In real-time setups:
+- The FastAPI backend could use a background thread or a scheduler to run periodic captures
+- OpenCV, GStreamer, or vendor SDKs would handle low-latency streaming
+- The prediction output could be displayed on a dashboard, stored, or sent to downstream systems
+
+
 ---
 
 ## Project Structure
