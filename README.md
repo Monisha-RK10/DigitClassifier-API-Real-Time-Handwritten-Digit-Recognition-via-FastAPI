@@ -56,14 +56,17 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
   1. Go to [https://render.com](https://render.com)
   2. Click on `New` → `Web Service`
   3. Select `Public Git Repository`
-  4. Paste this GitHub repo URL: `https://github.com/Monisha-RK10/DigitClassifier-API-Real-Time-Handwritten-Digit-Recognition-via-FastAPI`
-  5. Click `Connect Repository`
-  6. Under **Region**, select `Frankfurt (EU Central)` or your preferred one.
-  7. Under **Instance Type**, select `Free (for hobby projects)`
-  8. Leave the build command empty (FastAPI auto detects)
-  9. Click `Deploy Web Service` (Wait for ~15–20 min until the build is complete).
-  10. Once done, visit: `https://digitclassifier-api-real-time.onrender.com/docs` (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
-  11. ###  Using the endpoints:
+  4. Paste this GitHub repo URL:
+
+     https://github.com/Monisha-RK10/DigitClassifier-API-Real-Time-Handwritten-Digit-Recognition-via-FastAPI
+     
+  6. Click `Connect Repository`
+  7. Under **Region**, select `Frankfurt (EU Central)` or your preferred one.
+  8. Under **Instance Type**, select `Free (for hobby projects)`
+  9. Leave the build command empty (FastAPI auto detects)
+  10. Click `Deploy Web Service` (Wait for ~15–20 min until the build is complete).
+  11. Once done, visit: `https://digitclassifier-api-real-time.onrender.com/docs` (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
+  12. ###  Using the endpoints:
       #### Health Check:
       Click `/health` → `Try it out` → `Execute`
       Should return: `{ "status": "ok" }`
