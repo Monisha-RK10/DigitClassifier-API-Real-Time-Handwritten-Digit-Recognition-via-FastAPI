@@ -165,7 +165,7 @@ Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
 
 ```
 ---
-###  Live API Demo
+##  Live API Demo
 
 The Digit Classifier API is live here:  
 
