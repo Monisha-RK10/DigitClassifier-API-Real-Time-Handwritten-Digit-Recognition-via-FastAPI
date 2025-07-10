@@ -58,14 +58,14 @@ The dataset is automatically downloaded using `torchvision.datasets.MNIST` and s
 
 ## Example API Calls (without Swagger UI)
 
-### Health Check
+- **Health Check**
 
 ```bash
 curl http://127.0.0.1:8000/health
 ```
 > **Expected Response:** `{ "status": "ok" }`
 
-### Predict with uploaded image
+- **Predict with uploaded image**
   
 ```bash
 curl -X POST "http://127.0.0.1:8000/predict" \
@@ -74,7 +74,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 ```
 > **Expected output:** `{ "predicted_class": 2 }`
 
-### Predict with camera simulation
+- **Predict with camera simulation**
 
 ```bash
 curl -X POST "http://127.0.0.1:8000/predict" \
