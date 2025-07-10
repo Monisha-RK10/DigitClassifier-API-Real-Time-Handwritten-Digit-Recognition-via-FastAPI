@@ -15,6 +15,6 @@ model = load_model()
 def predict_digit(image):
     tensor = preprocess_image(image)                 # 1x1x28x28
     with torch.no_grad():                            # No gradient computation
-        output = model(tensor)
+        output = model(tensor)                       # [1, 10], number of classes: 0 to 9
         prediction = output.argmax(dim=1).item()     # Prediction with highest probability score
     return prediction
