@@ -169,7 +169,7 @@ This script checks:
 - /health: Ensures the app is alive and responding.
 - /predict: Sends a dummy image (28x28 blank PNG) and verifies a prediction response.
 > Note: This test uses FastAPI’s TestClient to simulate file uploads and API calls.
-
+---
 ## Optional: Deploying on Render.com (Public URL)
 
 To test the API online, you can deploy it using [Render.com](https://render.com/):
