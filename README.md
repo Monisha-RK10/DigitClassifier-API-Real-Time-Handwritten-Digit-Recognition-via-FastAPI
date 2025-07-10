@@ -63,7 +63,8 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
   8. Leave the build command empty (FastAPI auto detects)
   9. Click `Deploy Web Service` (Wait for ~15–20 min until the build is complete).
   10. Once done, visit: https://digitclassifier-api-real-time.onrender.com/docs (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
-  11. **Use the endpoints:**
+      > Note: Verify this url on the render build screen, then use visit the corresponding url's docs to use the endpoints
+  12. **Use the endpoints:**
       1. **Health Check**:
            1. Click `/health` → `Try it out` → `Execute`
            2. Should return `{ "status": "ok" }`
