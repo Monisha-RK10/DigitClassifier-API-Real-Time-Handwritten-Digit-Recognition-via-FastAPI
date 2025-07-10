@@ -64,8 +64,6 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
   10. Click `Deploy Web Service` (Wait for ~15–20 min until the build is complete).
   11. Once done, visit: https://digitclassifier-api-real-time.onrender.com/docs (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
   13. **Using the endpoints:**
-      ```bash
-      
       - **Health Check:**
         - Click `/health` → `Try it out` → `Execute`
         - Should return: `{ "status": "ok" }`
@@ -85,7 +83,7 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
           - Returns the predicted digit
 
 
-```
+---
 
 ## Handling Real-Time Camera Input in Production
 
