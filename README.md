@@ -68,11 +68,11 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
            1. Click `/health` → `Try it out` → `Execute`
            2. Should return `{ "status": "ok" }`
       2. **Predict with Camera Simulation**:
-         1. Click `/predict` → `Try it out`
-         2. Set:
-           1. `use_camera` = `true`
-           2. Leave `file` empty (uncheck “Send empty value”)
-         3. Returns a simulated prediction from test images
+           1. Click `/predict` → `Try it out`
+           2. Set:
+              1. `use_camera` = `true`
+              2. Leave `file` empty (uncheck “Send empty value”)
+          3. Returns a simulated prediction from test images
       3. **Predict with Uploaded Image**:
          1. Click `/predict` → `Try it out`
          2. Set:
