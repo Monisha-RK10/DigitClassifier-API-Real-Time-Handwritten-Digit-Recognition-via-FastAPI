@@ -195,3 +195,4 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
             2. Upload a digit image (e.g., `app/test_images/upload_digit_2_1.png`)
          3. Returns the predicted digit
 
+---
