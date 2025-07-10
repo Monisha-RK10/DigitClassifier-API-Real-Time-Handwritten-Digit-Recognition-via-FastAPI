@@ -3,7 +3,7 @@
 # Step 4
 # This code does the following:
 # Looks inside app/mock_camera_feed
-# Picks a random image like digit 2 (camera_digit_2_1.png) to mimics a real-world camera
+# Picks a random image like digit 2 (camera_digit_2_1.png) to mimic a real-world camera
 # Opens it as a PIL image
 # Sends it to the model
 
