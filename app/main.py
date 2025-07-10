@@ -25,7 +25,7 @@ import io                                                                       
 from app.camera import capture_image_from_virtual_camera                                          # Handles mock camera input
 from app.predict import predict_digit                                                             # Takes a PIL image and returns a digit prediction
 
-app = FastAPI()                                                                                   # app gets picked up while running uvicorn app.main:app
+app = FastAPI()                                                                                   # 'app' gets picked up while running uvicorn app.main:app
 
 @app.get("/health")                                                                               # To verify if API is running
 def health_check():
