@@ -69,7 +69,7 @@ curl http://127.0.0.1:8000/health
 ### Predict with uploaded image
   
 ```bash
-- curl -X POST "http://127.0.0.1:8000/predict" \
+curl -X POST "http://127.0.0.1:8000/predict" \
      -F "use_camera=false" \
      -F "file=@app/upload_digit_1_2"
 ```
@@ -77,6 +77,14 @@ curl http://127.0.0.1:8000/health
 `{ "predicted_class": 2 }`
 
 ### Predict with camera simulation
+
+```bash
+curl -X POST "http://127.0.0.1:8000/predict" \
+     -F "use_camera=true"
+```
+**Expected output (random):**
+`{ "predicted_class": 2 }`
+
 ---
 
 ## Optional: Deploying on Render.com (Public URL)
