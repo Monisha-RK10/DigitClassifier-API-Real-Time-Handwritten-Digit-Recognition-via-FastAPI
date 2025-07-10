@@ -164,6 +164,6 @@ Visit: https://digitclassifier-api-real-time.onrender.com/docs
 
 **Sample prediction:**
 
-![Prediction result](screenshots/predict_output.png)
+![Prediction result](output/predict_output.png)
 
 ---
