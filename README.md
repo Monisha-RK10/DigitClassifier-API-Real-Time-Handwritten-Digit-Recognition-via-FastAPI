@@ -65,22 +65,22 @@ curl http://127.0.0.1:8000/health
 ```
 > **Expected Response:** `{ "status": "ok" }`
 
-- **Predict with uploaded image**
+- **Predict with Uploaded Image**
   
 ```bash
 curl -X POST "http://127.0.0.1:8000/predict" \
      -F "use_camera=false" \
      -F "file=@app/upload_digit_1_2"
 ```
-> **Expected output:** `{ "predicted_class": 2 }`
+> **Expected Output:** `{ "predicted_class": 2 }`
 
-- **Predict with camera simulation**
+- **Predict with Camera Simulation**
 
 ```bash
 curl -X POST "http://127.0.0.1:8000/predict" \
      -F "use_camera=true"
 ```
-> **Expected output (random):** `{ "predicted_class": 2 }`
+> **Expected Output (Random):** `{ "predicted_class": 2 }`
 
 ---
 
