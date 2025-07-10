@@ -72,7 +72,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
      -F "use_camera=false" \
      -F "file=@app/upload_digit_1_2"
 ```
-> **Expected Output:** `{ "predicted_class": 2 }`
+> **Expected Response:** `{ "predicted_class": 2 }`
 
 - **Predict with Camera Simulation**
 
@@ -80,7 +80,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 curl -X POST "http://127.0.0.1:8000/predict" \
      -F "use_camera=true"
 ```
-> **Expected Output (Random):** `{ "predicted_class": 2 }`
+> **Expected Response (Random):** `{ "predicted_class": 2 }`
 
 ---
 
