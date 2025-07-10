@@ -58,13 +58,13 @@ The dataset is automatically downloaded using `torchvision.datasets.MNIST` and s
 
 ## Example API Calls (without Swagger UI)
 
-- **Health Check**
+### Health Check
 
 ```bash
 curl http://127.0.0.1:8000/health
 ```
-  - Expected Response:
-  - `{ "status": "ok" }`
+**Expected Response:**
+`{ "status": "ok" }`
 
 - **Predict with uploaded image**
   
