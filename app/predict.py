@@ -4,7 +4,7 @@
 # This piece of code does the following:
 # Loads trained model's parameters from model.py
 # Loads preprocessing function from utils.py
-# Perform inference on the preprocessed image using trained weights
+# Performs inference on the preprocessed image using trained weights
 
 from app.model import load_model
 from app.utils import preprocess_image
