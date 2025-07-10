@@ -133,7 +133,6 @@ DigitClassifier API: Real-Time Handwritten Digit Recognition via FastAPI/
 ├── Dockerfile
 ├── .dockerignore
 ├── README.md
-│
 ├── output              # Swagger UI and sample predicion for camera simulation
 
 ```
