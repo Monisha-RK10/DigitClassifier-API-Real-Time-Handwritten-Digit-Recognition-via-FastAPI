@@ -2,10 +2,10 @@
 
 # Step 4
 # This code does the following:
-# Look inside app/mock_camera_feed
-# Pick a random image like digit 2 (camera_digit_2_1.png)
-# Open it as a PIL image
-# Send it to the model
+# Looks inside app/mock_camera_feed
+# Picks a random image like digit 2 (camera_digit_2_1.png) to mimics a real-world camera
+# Opens it as a PIL image
+# Sends it to the model
 
 from pathlib import Path
 from PIL import Image
@@ -16,4 +16,4 @@ def capture_image_from_virtual_camera():
     sample_images = list(camera_folder.glob("*.png"))
     if not sample_images:
         raise FileNotFoundError("No images in virtual camera feed.")
-    return Image.open(random.choice(sample_images))
+    return Image.open(random.choice(sample_images))                          # Mimics a real-world camera (picks random images like a feed)
