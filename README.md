@@ -65,20 +65,20 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
   10. Once done, visit: https://digitclassifier-api-real-time.onrender.com/docs (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
   11. **Use the endpoints:**
       1. **Health Check**:
-       - Click `/health` → `Try it out` → `Execute`
-       - Should return `{ "status": "ok" }`
+        - Click `/health` → `Try it out` → `Execute`
+        - Should return `{ "status": "ok" }`
       2. **Predict with Camera Simulation**:
-       - Click `/predict` → `Try it out`
-       - Set:
-         - `use_camera` = `true`
-         - Leave `file` empty (uncheck “Send empty value”)
-       - Returns a simulated prediction from test images
+        - Click `/predict` → `Try it out`
+        - Set:
+           - `use_camera` = `true`
+           - Leave `file` empty (uncheck “Send empty value”)
+        - Returns a simulated prediction from test images
     3. **Predict with Uploaded Image**:
-       - Click `/predict` → `Try it out`
-       - Set:
-         - `use_camera` = `false`
-         - Upload a digit image (e.g., `app/test_images/3.png`)
-       - Returns the predicted digit
+        - Click `/predict` → `Try it out`
+        - Set:
+           - `use_camera` = `false`
+           - Upload a digit image (e.g., `app/test_images/3.png`)
+        - Returns the predicted digit
 
 
 
