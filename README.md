@@ -147,7 +147,7 @@ Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
 ├── .dockerignore
 ├── README.md
 │
-├── output 
+├── output              # Swagger UI and sample predicion for camera simulation
 
 ```
 ---
