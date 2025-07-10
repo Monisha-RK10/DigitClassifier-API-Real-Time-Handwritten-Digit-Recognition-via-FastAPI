@@ -64,10 +64,10 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
   9. Click `Deploy Web Service` (Wait for ~15–20 min until the build is complete).
   10. Once done, visit: https://digitclassifier-api-real-time.onrender.com/docs (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
   11. **Use the endpoints:**
-    1. **Health Check**:
+      1. **Health Check**:
        - Click `/health` → `Try it out` → `Execute`
        - Should return `{ "status": "ok" }`
-    2. **Predict with Camera Simulation**:
+      2. **Predict with Camera Simulation**:
        - Click `/predict` → `Try it out`
        - Set:
          - `use_camera` = `true`
