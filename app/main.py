@@ -11,7 +11,7 @@
     # Or: b) a simulated camera flag via query: /predict?use_camera=true
   # Image processing:
     # Uploaded or camera images are converted to RGB to normalize color channels.
-    # Some uploads may be grayscale, RGBA, or CMYK. RGB standardizes this.
+    # This is because some uploads may be grayscale, RGBA, or CMYK, therefore, RGB standardizes this.
   # Error handling:
     # Returns HTTP 400 if neither file nor camera flag is provided (client error).
     # Returns HTTP 500 if something fails internally.
