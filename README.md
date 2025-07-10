@@ -88,43 +88,6 @@ Note:
 - `-F`: Form Submission (multipart/form-data) to submit form data (like images or strings). It automatically sets the content type to `multipart/form-data`
 ---
 
-## Optional: Deploying on Render.com (Public URL)
-
-To test the API online, you can deploy it using [Render.com](https://render.com/):
-
-### Steps:
-
-  1. Go to [https://render.com](https://render.com)
-  2. Click on `New` → `Web Service`
-  3. Select `Public Git Repository`
-  4. Paste this GitHub repo URL: https://github.com/Monisha-RK10/DigitClassifier-API-Real-Time-Handwritten-Digit-Recognition-via-FastAPI 
-  5. Click `Connect Repository`
-  6. Under **Region**, select `Frankfurt (EU Central)` or your preferred one.
-  7. Under **Instance Type**, select `Free (for hobby projects)`
-  8. Leave the build command empty (FastAPI auto detects)
-  9. Click `Deploy Web Service` (Wait for ~15–20 min until the build is complete).
-  10. Once done, visit: https://digitclassifier-api-real-time.onrender.com/docs (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
-      > Note: Check the url on the render build screen, then visit the corresponding url's docs to use the endpoints
-  12. **Use the endpoints:**
-      1. **Health Check**:
-           1. Click `/health` → `Try it out` → `Execute`
-           2. Should return `{ "status": "ok" }`
-      2. **Predict with Camera Simulation**:
-           1. Click `/predict` → `Try it out`
-           2. Set:
-              1. `use_camera` = `true`
-              2. Leave `file` empty (uncheck “Send empty value”)
-          3. Returns a simulated prediction from test images
-      3. **Predict with Uploaded Image**:
-         1. Click `/predict` → `Try it out`
-         2. Set:
-            1. `use_camera` = `false`
-            2. Upload a digit image (e.g., `app/test_images/upload_digit_2_1.png`)
-         3. Returns the predicted digit
-
-
----
-
 ## Handling Real-Time Camera Input in Production
 
 - In a production setup, a real camera (e.g., USB webcam, IDS/Ximea industrial camera) would replace the simulated image source.
@@ -187,3 +150,38 @@ https://digitclassifier-api-real-time.onrender.com/docs
 ![Prediction result](output/predict_output.png)
 
 ---
+
+## Optional: Deploying on Render.com (Public URL)
+
+To test the API online, you can deploy it using [Render.com](https://render.com/):
+
+### Steps:
+
+  1. Go to [https://render.com](https://render.com)
+  2. Click on `New` → `Web Service`
+  3. Select `Public Git Repository`
+  4. Paste this GitHub repo URL: https://github.com/Monisha-RK10/DigitClassifier-API-Real-Time-Handwritten-Digit-Recognition-via-FastAPI 
+  5. Click `Connect Repository`
+  6. Under **Region**, select `Frankfurt (EU Central)` or your preferred one.
+  7. Under **Instance Type**, select `Free (for hobby projects)`
+  8. Leave the build command empty (FastAPI auto detects)
+  9. Click `Deploy Web Service` (Wait for ~15–20 min until the build is complete).
+  10. Once done, visit: https://digitclassifier-api-real-time.onrender.com/docs (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
+      > Note: Check the url on the render build screen, then visit the corresponding url's docs to use the endpoints
+  12. **Use the endpoints:**
+      1. **Health Check**:
+           1. Click `/health` → `Try it out` → `Execute`
+           2. Should return `{ "status": "ok" }`
+      2. **Predict with Camera Simulation**:
+           1. Click `/predict` → `Try it out`
+           2. Set:
+              1. `use_camera` = `true`
+              2. Leave `file` empty (uncheck “Send empty value”)
+          3. Returns a simulated prediction from test images
+      3. **Predict with Uploaded Image**:
+         1. Click `/predict` → `Try it out`
+         2. Set:
+            1. `use_camera` = `false`
+            2. Upload a digit image (e.g., `app/test_images/upload_digit_2_1.png`)
+         3. Returns the predicted digit
+
