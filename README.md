@@ -116,7 +116,7 @@ Note:
 
 ```bash
 
-Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
+DigitClassifier API: Real-Time Handwritten Digit Recognition via FastAPI/
 │
 ├── app/
 │   ├── main.py          # FastAPI entry point
