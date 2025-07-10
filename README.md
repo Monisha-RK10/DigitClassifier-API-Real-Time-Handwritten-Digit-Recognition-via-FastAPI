@@ -58,14 +58,14 @@ The dataset is automatically downloaded using `torchvision.datasets.MNIST` and s
 
 ## Example API Calls (without Swagger UI)
 
-- **Health Check**
+### Health Check
 
 ```bash
 curl http://127.0.0.1:8000/health
 ```
 > **Expected Response:** `{ "status": "ok" }`
 
-- **Predict with Uploaded Image**
+### Predict with Uploaded Image
   
 ```bash
 curl -X POST "http://127.0.0.1:8000/predict" \
@@ -74,7 +74,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 ```
 > **Expected Response:** `{ "predicted_class": 2 }`
 
-- **Predict with Camera Simulation**
+### Predict with Camera Simulation
 
 ```bash
 curl -X POST "http://127.0.0.1:8000/predict" \
@@ -119,9 +119,6 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
          3. Returns the predicted digit
 
 
-
-
-
 ---
 
 ## Handling Real-Time Camera Input in Production
@@ -154,15 +151,15 @@ Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
 
 ```
 ---
-### Sample Output from Render
+### Sample Output using Render
 
 Visit: https://digitclassifier-api-real-time.onrender.com/docs
 
-**Swagger UI:**
+#### Swagger UI
 
 ![Swagger UI Screenshot](output/swagger_ui.png)
 
-**Sample prediction:**
+#### Sample Prediction (Camera Simulation)
 
 ![Prediction result](output/predict_output.png)
 
