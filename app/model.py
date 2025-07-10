@@ -51,7 +51,7 @@ def get_data_loaders(batch_size=64):                                            
     train_dataset = datasets.MNIST('./data', train=True, download=True, transform=transform)          # Loads training set of MNIST (downloads it if necessary) and applies transform to every image. datasets.MNIST: built-in PyTorch dataset that loads images with corresponding labels and returns tuple (image_tensor, label)
     test_dataset = datasets.MNIST('./data', train=False, transform=transform)                         # Loads test split of MNIST (No re-download, train=False switches to test set)
 
-    train_set, val_set = random_split(train_dataset, [55000, 5000])                                   # Split 55,000 for train, 5,000 for validation
+    train_set, val_set = random_split(train_dataset, [55000, 5000])                                   # Splits 55,000 for train, 5,000 for validation
 
     train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True)                         # Wraps train set in a DataLoader (loads data in batches, shuffles to randomize order of samples each epoch and reduce overfitting)
     val_loader   = DataLoader(val_set, batch_size=batch_size, shuffle=False)                          # Wraps val set in a DataLoader (loads data in batches, no shuffle to keep the data in order for consistent evaluation)
@@ -106,7 +106,7 @@ def train_model(epochs=10, patience=3):
         model.eval()                                                                                 # Evaluation mode: Disables dropout and batchnorm randomness
         val_loss = 0                                                                                 # Stores total loss over all validation samples
         correct = 0                                                                                  # Counts how many predictions were correct
-        with torch.no_grad():                                                                        # Disable gradient computation for validation
+        with torch.no_grad():                                                                        # Disables gradient computation for validation
             for data, target in val_loader:
                 output = model(data)                                                                 # Output shape: [batch_size=64, 10]
                 val_loss += F.nll_loss(output, target, reduction='sum').item()                       # Computes loss for current batch. 'sum': Summation of loss for each sample (not average) to compute true average at the end. '.item()': Converts tensor scalar loss to Python float
@@ -119,17 +119,17 @@ def train_model(epochs=10, patience=3):
         print(f"\nVal set: Avg loss: {val_loss:.4f}, Accuracy: {correct}/{len(val_loader.dataset)} ({accuracy:.2f}%)")
 
         # Early stopping and model saving
-        if val_loss < best_val_loss:                                                                 # Update save model if val loss is less than best loss
+        if val_loss < best_val_loss:                                                                 # Updates save model if val loss is less than best loss
             best_val_loss = val_loss
-            epochs_no_improve = 0                                                                    # Reset 'epochs_no_improve'. This restarts the patience count from 0
-            torch.save(model.state_dict(), MODEL_PATH)                                               # Save model's parameters to disk (not full model architecture)
+            epochs_no_improve = 0                                                                    # Resets 'epochs_no_improve'. This restarts the patience count from 0
+            torch.save(model.state_dict(), MODEL_PATH)                                               # Saves model's parameters to disk (not full model architecture)
             print("Saved new best model!\n")
         else:
             epochs_no_improve += 1                                                                   # If val loss does not improve, increment 'epochs_no_improve'
             print(f"No improvement. Patience: {epochs_no_improve}/{patience}\n")
             if epochs_no_improve >= patience:                                                        # If 'epochs_no_improve' >= patience
                 print("Early stopping triggered.")
-                break                                                                                # Exit the training loop and use the last best saved model to disk
+                break                                                                                # Exits the training loop and use the last best saved model to disk
 
 # This function loads the previously trained model's parameters from disk
 def load_model():
