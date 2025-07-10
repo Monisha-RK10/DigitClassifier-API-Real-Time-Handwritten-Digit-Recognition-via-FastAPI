@@ -165,11 +165,20 @@ Image_Classification_using_CNN_on_MNIST (Python & FastAPI)/
 
 ```
 ---
-### Sample Output using Render
+###  Live API Demo
 
-Visit: https://digitclassifier-api-real-time.onrender.com/docs
+The Digit Classifier API is live here:  
 
-#### Swagger UI
+https://digitclassifier-api-real-time.onrender.com
+
+### Available Endpoints
+- `GET /health` – Health check
+- `POST /predict` – Predict digit from image or simulated camera
+
+
+### Swagger UI (Try the API interactively):
+
+https://digitclassifier-api-real-time.onrender.com/docs
 
 ![Swagger UI Screenshot](output/swagger_ui.png)
 
