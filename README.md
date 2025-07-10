@@ -15,6 +15,16 @@
 - Suitable for testing end-to-end API integration.
 - Ideal to simulate camera-based inference pipelines.
 
+### Why CNN?
+
+- MNIST images are 28x28 grayscale digits. They have spatial patterns such as lines, curves, and shapes.
+- CNNs (Convolutional Neural Networks) are ideal for:
+  - Recognizing spatial features (edges, textures, corners)
+  - Learning hierarchical patterns in images (first strokes, then shapes, then digits)
+  - Low parameter count (compared to fully connected) = faster inference
+  - Models like logistic regression or SVMs flatten images (`28×28 → 784`) and lose spatial context. 
+
+
 > This setup mirrors real-world applications where a physical camera might capture digits (e.g., food processing, electronics where each product maybe stamped with a **quality grade digit** between 0 and 9), and a backend system processes the image for classification.
 >
 > The focus is on clean API design, modular codebase (training, prediction, utils, camera), and extensibility, making it a strong foundation for scaling up to real-time industrial vision tasks.
