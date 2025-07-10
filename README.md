@@ -57,30 +57,31 @@ To test the API online, you can deploy it using [Render.com](https://render.com/
   2. Click on `New` → `Web Service`
   3. Select `Public Git Repository`
   4. Paste this GitHub repo URL: https://github.com/Monisha-RK10/DigitClassifier-API-Real-Time-Handwritten-Digit-Recognition-via-FastAPI 
-  6. Click `Connect Repository`
-  7. Under **Region**, select `Frankfurt (EU Central)` or your preferred one.
-  8. Under **Instance Type**, select `Free (for hobby projects)`
-  9. Leave the build command empty (FastAPI auto detects)
-  10. Click `Deploy Web Service` (Wait for ~15–20 min until the build is complete).
-  11. Once done, visit: https://digitclassifier-api-real-time.onrender.com/docs (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
-  13. Using the endpoints:
-   - Health Check:
-     - Click `/health` → `Try it out` → `Execute`
-     - Should return: `{ "status": "ok" }`
-      
-      - **Predict with Camera Simulation:**
-        - Use `POST /predict`
-        - Set:
-          - `use_camera` = `true`
-          - Leave `file` empty (uncheck “Send empty value”)
-          - Returns a simulated digit prediction from test images
-      
-      - **Predict with Uploaded Image:**
-        - Use `POST /predict`
-        - Set:
-          - `use_camera` = `false`
-          - Upload an image (e.g., `app/test_images/3.png`)
-          - Returns the predicted digit
+  5. Click `Connect Repository`
+  6. Under **Region**, select `Frankfurt (EU Central)` or your preferred one.
+  7. Under **Instance Type**, select `Free (for hobby projects)`
+  8. Leave the build command empty (FastAPI auto detects)
+  9. Click `Deploy Web Service` (Wait for ~15–20 min until the build is complete).
+  10. Once done, visit: https://digitclassifier-api-real-time.onrender.com/docs (This will launch Swagger UI to interact with the `/predict` and `/health` endpoints).
+  11. **Use the endpoints:**
+    1. **Health Check**:
+       - Click `/health` → `Try it out` → `Execute`
+       - Should return `{ "status": "ok" }`
+    2. **Predict with Camera Simulation**:
+       - Click `/predict` → `Try it out`
+       - Set:
+         - `use_camera` = `true`
+         - Leave `file` empty (uncheck “Send empty value”)
+       - Returns a simulated prediction from test images
+    3. **Predict with Uploaded Image**:
+       - Click `/predict` → `Try it out`
+       - Set:
+         - `use_camera` = `false`
+         - Upload a digit image (e.g., `app/test_images/3.png`)
+       - Returns the predicted digit
+
+
+
 
 
 ---
